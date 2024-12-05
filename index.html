@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Learning for Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .module-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .module-card:hover {
+            transform: scale(1.02);
+        }
+        .module-card h3 {
+            margin: 0 0 10px;
+            color: #4CAF50;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>English Learning for Beginners</h1>
+        <p>Start your journey to learn English with interactive lessons and practice!</p>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Select a Module</h2>
+            <div class="module-card" onclick="openModule('introduction')">
+                <h3>1. Introduction</h3>
+                <p>Learn how to introduce yourself and greet others.</p>
+            </div>
+            <div class="module-card" onclick="openModule('restaurant')">
+                <h3>2. Ordering at a Restaurant</h3>
+                <p>Practice phrases to order food and drinks.</p>
+            </div>
+            <div class="module-card" onclick="openModule('describing')">
+                <h3>3. Describing People and Places</h3>
+                <p>Learn how to describe appearances and locations.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 English Learning for Beginners</p>
+    </footer>
+    <script>
+        function openModule(module) {
+            window.location.href = `${module}.html`;
+        }
+    </script>
+</body>
+</html>

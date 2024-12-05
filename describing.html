@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Describing People and Places - English Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .phrase {
+            margin: 15px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Describing People and Places</h1>
+        <p>Learn how to describe appearances and locations.</p>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Common Phrases</h2>
+            <div class="phrase">
+                <strong>He is tall and has brown hair.</strong> (Describing a person)
+                <button onclick="speak('He is tall and has brown hair.')">Play</button>
+            </div>
+            <div class="phrase">
+                <strong>The park is beautiful and quiet.</strong> (Describing a place)
+                <button onclick="speak('The park is beautiful and quiet.')">Play</button>
+            </div>
+            <div class="phrase">
+                <strong>The house is big and has a garden.</strong> (Describing a place)
+                <button onclick="speak('The house is big and has a garden.')">Play</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 English Learning for Beginners</p>
+    </footer>
+    <script>
+        function speak(text) {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = "en-US";
+            speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
