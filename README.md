@@ -21,6 +21,7 @@ Website ini dirancang untuk membantu pemula belajar bahasa Inggris melalui pelaj
 1. Buka halaman utama dan pilih modul yang ingin Anda pelajari.
 2. Klik tombol "Play" di sebelah setiap frasa untuk mendengarkan pengucapan yang benar.
 3. Praktikkan frasa-frasa tersebut untuk meningkatkan kemampuan bahasa Inggris Anda.
+4. Kunjungi halaman [fatiana13.github.io](https://fatiana13.github.io/) untuk mencoba website.
 
 ## Teknologi yang Digunakan
 
